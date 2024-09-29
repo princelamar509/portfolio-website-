@@ -17,12 +17,12 @@ margin-top: 2rem;
   max-width: 1300px;
   padding: 1rem;
   margin: 0 auto;
-
+text-align: center;
 }
 
 
 .hero-title {
-  text-align: start;
+  text-align: center;
 }
 
 .hero-title h3 {
@@ -50,6 +50,8 @@ margin-top: 2rem;
 .h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
+  text-align: center;
+  
 }
 
 .hero-name-highlight {
@@ -68,6 +70,7 @@ margin-top: 2rem;
   overflow: hidden;
   border-right: 2px solid transparent; 
   animation: typing 3s steps(850, end) infinite;
+  
 }
 
 @keyframes typing {
