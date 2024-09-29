@@ -1,0 +1,200 @@
+/* General about section styling */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  color: #020202;
+  margin-top: 80px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 40px;
+}
+
+
+.about-text {
+  flex: 1;
+  padding-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 2rem;
+  opacity: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #020202;
+
+}
+
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-text p.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.bold1{
+  font-size: 0.8rem;
+  color: goldenrod;
+  font-weight: 600;
+margin-left: 20px;
+  opacity: 1; 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+ 
+
+}
+
+
+
+
+ 
+.about-image {
+  flex: 1;
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.about-image img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 14px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-top: 40px;
+  overflow: hidden;
+  transform: scale(1.05);
+}
+
+.about-image img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 14px 20px rgba(9, 4, 4, 0.955);
+  filter: grayscale(100%);
+}
+
+
+.achievements{
+  font-size: 1.5rem;
+  font-weight: 600;
+color: goldenrod;
+
+}
+
+fieldset {
+  width: 100%;
+  border: 2px solid goldenrod;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.note{
+  font-size: 0.8rem;
+  color: goldenrod;
+  margin-bottom: 40px;
+  opacity: 1; 
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0e0d0d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #111010;
+  display: flex;
+  align-items: center;
+}
+
+li svg {
+  margin-right: 10px;
+  color: goldenrod;
+  transition: transform 0.3s ease;
+}
+
+li:hover svg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+
+}
+
+
+progress[value] {
+  width: 100%;
+  appearance: none;
+ 
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #e6e6e6; 
+  border-radius: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: goldenrod; 
+  border-radius: 5px;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: goldenrod; 
+  border-radius: 5px;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .about-image img {
+    max-width: 300px;
+  }
+
+}

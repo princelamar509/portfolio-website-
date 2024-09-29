@@ -1,0 +1,368 @@
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: #020202; 
+ 
+}
+
+/* Hero Container */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Hero Title */
+.hero-title {
+  text-align: start;
+}
+
+.hero-title h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  text-align: start;
+}
+
+.hero-emoji {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  animation: waving 1.5s infinite ease-in-out;
+  display: inline-block; /* Ensure the emoji stays inline */
+}
+
+@keyframes waving {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(15deg); }
+  30% { transform: rotate(-10deg); }
+  45% { transform: rotate(15deg); }
+  60% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero-name-highlight {
+  color: goldenrod;
+}
+
+.hero-title h2 {
+  font-size: 1.9rem;
+  color: #0e0d0d;
+  margin: 0.5rem 0;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: start;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid transparent; 
+  animation: typing 3s steps(850, end) infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+/* Hero Image */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+
+
+
+.hero-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 12px 5px #E6E6E6, 0px 10px 0px #E6E6E6, 0px 10px 0px #E6E6E6;
+
+}
+
+
+
+
+
+
+/* Introduction Section */
+.introduction-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  line-height: 1.1;
+}
+
+.intro-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  white-space: nowrap;
+  margin-bottom: -30px;
+
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+text-overflow: clip;
+}
+
+.connect-text {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+/* Avatar */
+.intro-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Container for the avatar */
+.intro-avatar {
+  position: relative; /* This is needed to position emojis absolutely */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Avatar image styling */
+.intro-avatar img {
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+/* Emoji styling and animation */
+.intro-avatar .emoji {
+  position: absolute;
+  font-size: 2rem; /* Adjust size as needed */
+  opacity: 0;
+  pointer-events: none; /* Prevent emojis from interfering with hover */
+  transition: opacity 0.3s ease-out;
+}
+
+/* Emoji animation keyframes */
+@keyframes disperse {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(100px * (random() - 0.5)), calc(100px * (random() - 0.5)));
+    opacity: 0;
+  }
+}
+
+/* Apply hover effect to image */
+.intro-avatar:hover img {
+  transform: scale(1.1);
+}
+
+/* Apply dispersing effect on hover */
+.intro-avatar:hover .emoji {
+  animation: disperse 1s ease-out forwards;
+}
+
+/* Emoji positioning and color */
+.intro-avatar .emoji:nth-child(1) {
+  top: 20%;
+  left: 20%;
+  color: yellow; /* Happy emoji color */
+}
+
+.intro-avatar .emoji:nth-child(2) {
+  top: 20%;
+  left: -60%;
+  color: lightblue; /* Smile emoji color */
+}
+
+.intro-avatar .emoji:nth-child(3) {
+  top: -60%;
+  left: 80%;
+  color: lightcoral; /* Chill emoji color */
+}
+
+
+/* Social Icons */
+.intro-social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.social-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+line-height: normal;
+  margin-bottom: -1rem;
+}
+
+.social-text {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  text-overflow: clip;
+  margin-bottom: -1rem;
+}
+.intro-social-icons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 28px;
+  width: 60px;
+  height: 60px;
+  color: #fcfcfc;
+  justify-content: center;
+  align-items:  center;
+  position: relative;
+  margin: 8px 15px; /* Space between icons */
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.intro-social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: goldenrod;
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+
+}
+
+.intro-social-icons a:hover {
+  color: #010101;
+  background: #f4c003;
+  animation: wiggle 0.3s ease-in;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  75% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.intro-social-icons a:hover::before {
+  transform: scale(0);
+}
+
+.intro-social-icons a i {
+  transition: 0.3s ease-in;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small screens (mobile) */
+@media (min-width: 576px) {
+  .hero-title h1 {
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  .hero-title h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro-text {
+    font-size: 1.15rem;
+    max-width: 700px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  .hero-title h1 {
+    font-size: 3rem;
+  }
+
+  .hero-title h2 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.25rem;
+  }
+
+  .hero-image img {
+    width: 600px; /* Larger size for desktop */
+    height: 600px; /* Larger size for desktop */
+  }
+
+  .intro-avatar img {
+    width: 200px;
+    height: 200px;
+  }
+}
