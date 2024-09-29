@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 450px;
+  width: 10rem;
   background: #1f1f1f;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -113,7 +113,7 @@
   width: 90%;
   padding: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
   display: flex;
@@ -127,7 +127,6 @@
 
 .nav-item svg {
   margin-right: 15px;
-  color: #DAA520;
 }
 
 
@@ -144,7 +143,6 @@
   transform: translateX(0);
 }
 
-/* Clock Styles */
 .clock {
   text-align: center;
   padding: 20px;
@@ -159,18 +157,16 @@
   font-size: 1.5rem;
 }
 
-/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
   .navbar {
-    width: 100%;
+    width: 80%;
     height: 100vh;
     transform: translateX(-100%);
+   
   }
 
-  .menu-icon {
-    top: 30px;
-    right: 20px;
-  }
+  
 
   .avatar-section {
     margin: 0 auto;
