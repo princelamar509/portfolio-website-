@@ -41,11 +41,9 @@ const Navbar = () => {
           <FaFileAlt color='#fff' size={33}/> Resume
         </Link>
 
-
-
-        <Clock />
       </div>
     
+      <Clock />
     </nav>
   );
 };
