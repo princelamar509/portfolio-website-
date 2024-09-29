@@ -68,8 +68,8 @@ font-weight: bolder;
 }
 
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   margin-bottom: 15px;
   transition: transform 0.4s ease;
@@ -149,8 +149,7 @@ display: flex;
   color: #000000; 
   font-size: 18px;
   font-weight: 600;
-  position: relative;
-overflow: hidden;
+  position: relative;overflow: hidden;
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
@@ -161,7 +160,7 @@ overflow: hidden;
   border-radius: 10px;
   align-items: start;
  justify-content: start;
-transition: box-shadow 0.3s ease;
+
 }
 
 
