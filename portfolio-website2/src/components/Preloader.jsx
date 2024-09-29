@@ -6,8 +6,8 @@ const DownloadPreloader = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         style={{ margin: 'auto', background: 'none', display: 'block' }}
-        width="320px"
-        height="320px"
+        width="270px"
+        height="270px"
         viewBox="0 0 100 100"
         preserveAspectRatio="xMidYMid"
        

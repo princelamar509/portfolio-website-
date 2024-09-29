@@ -25,20 +25,20 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? <FaTimes size={39} /> : <FaBars size={39} />}
+        {menuOpen ? <FaTimes size={29} /> : <FaBars size={29} />}
       </div>
       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <Link to="/" onClick={toggleMenu} className='nav-item'> 
-          <FaHome color='#fff' size={30}/> Home 
+          <FaHome color='#fff' size={33}/> Home 
         </Link>
         <Link to="/about" onClick={toggleMenu} className='nav-item'>
-          <FaUser color='#fff' size={30}/> About
+          <FaUser color='#fff' size={33}/> About
         </Link>
         <Link to="/projects" onClick={toggleMenu} className='nav-item'>
-          <FaCode color='#fff' size={30}/> Projects
+          <FaCode color='#fff' size={33}/> Projects
         </Link>
         <Link to="/resume" onClick={toggleMenu} className='nav-item'>
-          <FaFileAlt color='#fff' size={30}/> Resume
+          <FaFileAlt color='#fff' size={33}/> Resume
         </Link>
       </div>
       <Clock />
