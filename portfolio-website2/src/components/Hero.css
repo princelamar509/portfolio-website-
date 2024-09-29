@@ -5,7 +5,7 @@
   align-items: center;
   padding: 2rem 1rem;
   color: #020202; 
-
+margin-top: 2rem;
 }
 
 
@@ -17,6 +17,7 @@
   max-width: 1300px;
   padding: 1rem;
   margin: 0 auto;
+
 }
 
 
@@ -300,6 +301,16 @@ line-height: normal;
     align-items: center;
   }
 
+  .hero-title h1 {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+
+  .hero-title h2 {  
+    font-size: 2rem;
+  } 
+
+
   .intro-text {
     font-size: 1.15rem;
     max-width: 700px;
@@ -311,6 +322,7 @@ line-height: normal;
   .hero-title h1 {
     font-size: 3rem;
     white-space: nowrap;
+
   }
 
   .hero-title h2 {

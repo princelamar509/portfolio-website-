@@ -1,6 +1,13 @@
 
 .clock {
-    margin-top: auto; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  top: 0;
+  left: 0;
+  transform: translateZ(20px); /* change later */
     padding: 20px;
     text-align: center;
     background: #fff;
@@ -9,7 +16,7 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.131);
     border-radius: 10px;
     transform: scale(0.9);
-    position: relative;
+
     z-index: 1;
   }
   
@@ -26,9 +33,12 @@
     .clock {
       width: 100%;
       height: auto;
-      position: fixed;
+      position: relative;
       top: 0;
       left: 0;
+      transform: none;
+      margin-top: 0;
+      padding: 20px;
       box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
