@@ -260,57 +260,45 @@ transition: box-shadow 0.3s ease;
 @media screen and (max-width: 768px) {
   .navbar {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links {
-    margin-top: 0;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    overflow-y: auto;
+    justify-content: flex-start;
   }
 
   .nav-item {
-    width: 90%;
-  } 
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu-icon {
+    top: 15px;
+    right: 10px;
+  }
 
   .avatar-section {
     display: block;
     width: 100%;
-    text-align: center;
-    margin-top: 20px;
-
-  }
-
-  .avatar-info {
     margin-top: 20px;
   }
 
-  .avatar-section .avatar {
-    width: 150px;
-    height: 150px;
+  .avatar {
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
-  } 
+  }
 
-  .avatar-section .avatar img {
-    width: 100%;
-    height: 100%;
+  .avatar img {
     border-radius: 50%;
   }
-
-  .avatar-info p {
-    font-size: 16px;
-  }
-
-  .avatar-info p svg {
-    font-size: 20px;
-  }
-
-  .avatar-info h2 {
-    font-size: 18px;
-  }
-
-  .avatar-info h3 {
-    font-size: 16px;
-  }
-  
 }
-
-
