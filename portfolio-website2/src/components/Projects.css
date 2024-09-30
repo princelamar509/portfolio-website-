@@ -16,6 +16,7 @@
   .filter-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     gap: 10px;
 overflow: hidden;
@@ -24,14 +25,13 @@ overflow: hidden;
   .filter-button {
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 800;
     border: 2px solid goldenrod;
     background-color: transparent;
     color: #000000;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border-radius: 5px;
     margin-top: 10px;
     overflow: hidden;
   }
