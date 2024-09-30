@@ -139,11 +139,10 @@ overflow: hidden;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.8rem;
-  bottom: 4rem;
+ bottom: 4rem;
 font-weight: bolder;
   display: flex;
   align-items: center;
-  justify-content: start;
 gap: 10px;
   z-index: 1;
   border-radius: 8px;
@@ -213,17 +212,11 @@ gap: 10px;
   .navbar {
     width: 60%;
     height: 100vh;
-    transform: translateX(-100%);
     position: fixed;
     top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    right: 0;
     transition: transform 0.3s ease;
+    z-index: 5;
   }
   .avatar-section {
     margin: 0 auto;
