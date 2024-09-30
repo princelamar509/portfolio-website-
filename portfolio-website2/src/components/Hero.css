@@ -17,7 +17,6 @@ text-align: center;
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-width: 1300px;
   padding: 1rem;
   margin: 0 auto;
 text-align:center;
@@ -69,14 +68,16 @@ h1 {
   font-weight: 800;
   line-height: 1.1;
   text-align: center;
-
   margin-bottom: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
   border-right: 2px solid transparent; 
-  animation: typing 3s steps(850, end) infinite;
-  
+  animation: typing 5s steps(822, end) infinite;
+  animation-delay: 0s;
 }
+
+
 
 @keyframes typing {
   from {
@@ -84,6 +85,15 @@ h1 {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #0e0d0d;
   }
 }
 
@@ -121,11 +131,12 @@ h1 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.7rem;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
   line-height: 1.1;
+  white-space: wrap;
 }
 
 .intro-heading {
@@ -133,9 +144,9 @@ h1 {
   font-weight: 800;
   white-space: nowrap;
   margin-bottom: 20px;
-align-self: start;
-text-align: start;
-justify-self: start;
+align-self: center;
+text-align: center;
+justify-self: center;
 }
 
 .intro-text {
@@ -143,12 +154,14 @@ justify-self: start;
   line-height: 1.4;
 text-overflow: clip;
   margin-bottom: 0.5rem;
-  align-self: start;
-  text-align: start;
-  justify-self: start;
+  align-self:center;
+  text-align: center;
+  justify-self: center;
+  white-space: wrap;
   overflow: hidden;
   margin-bottom: 0.5rem;
   font-weight: 800;
+  max-width: 800px;
 }
 
 .connect-text {
@@ -296,7 +309,7 @@ margin-bottom: -23px;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-    max-width: 1300px;
+
     padding: 1rem;
     margin: 0 auto;
     text-align: center;
@@ -309,6 +322,11 @@ margin-bottom: -23px;
   line-height: 1.2;
   margin-bottom: 10px;
   font-size: 2rem;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+
 }
 
   .intro-heading {
