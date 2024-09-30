@@ -2,6 +2,9 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -135,7 +138,24 @@ footer {
   .download-button:hover .visually-hidden {
     opacity: 1;
     visibility: visible;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     margin-left: 8px;
-    
+    animation: leftToRight 0.3s ease-in-out, slideIn 0.3s ;
+  }
+  
+  @keyframes leftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }

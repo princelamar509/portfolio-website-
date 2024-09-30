@@ -71,28 +71,28 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={30} />
+              <FaGithub  size={50}/>
             </a>
             <a
               href="https://www.linkedin.com/in/madeus-rene-294196318/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={30} />
+              <FaLinkedin size={50} />
             </a>
             <a
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter size={30} />
+              <FaTwitter size={50} />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={30} />
+              <FaInstagram size={50} />
             </a>
           </div>
 

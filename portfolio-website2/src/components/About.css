@@ -100,20 +100,22 @@ margin-left: 20px;
 }
 
 
+
+
 .achievements{
   font-size: 1.5rem;
   font-weight: 600;
 color: goldenrod;
-
+text-align: left;
 }
 
 fieldset {
-  width: 100%;
-  border: 2px solid goldenrod;
+max-width: 870px;
+margin: 0 auto;
+  border: 4px solid goldenrod;
   padding: 20px;
   margin-top: 40px;
   border-radius: 8px;
-  text-align: left;
 }
 
 .note{
@@ -130,6 +132,11 @@ legend {
   font-size: 1.5rem;
   font-weight: 600;
   color: #0e0d0d;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -171,7 +178,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-  background-color: goldenrod; 
+  background-color:   goldenrod; 
   border-radius: 5px;
 }
 
