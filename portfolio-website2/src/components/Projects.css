@@ -33,7 +33,7 @@ overflow: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 5px;
     margin-top: 10px;
-    
+    overflow: hidden;
   }
   
   .filter-button:hover, .filter-button.active {

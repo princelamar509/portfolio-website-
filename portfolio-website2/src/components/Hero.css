@@ -341,13 +341,13 @@ color: #000000;
     font-size: 1.9rem;
     font-weight: 800;
     white-space: nowrap;
-    margin-bottom: -30px;
-  
+  margin-bottom: 20px;
   }
   
   .intro-text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     line-height: 1.4;
+    font-weight: 700;
   }  
   
   

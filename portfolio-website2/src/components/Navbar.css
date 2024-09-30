@@ -142,7 +142,6 @@ overflow: hidden;
   bottom: 6rem;
 font-weight: bolder;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: start;
 gap: 10px;
@@ -170,8 +169,6 @@ gap: 10px;
   transform-origin: left;
   transition: transform 0.3s ease;
   overflow: hidden;
-align-self: start;
-
 }
 
 .nav-item:hover::before {
@@ -251,7 +248,8 @@ align-self: start;
   }
 
   .nav-item {
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
     padding: 10px;
 
