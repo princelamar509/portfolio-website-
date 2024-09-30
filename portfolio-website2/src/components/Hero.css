@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 1rem;
-  color: #020202; 
+  color: #000000; 
 margin-top: 2rem;
 align-items: center;
 justify-content: center;
@@ -28,13 +28,13 @@ text-align:center;
 }
 
 .hero-title h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0.5rem 0;
   text-align: center;
 }
 
 .hero-emoji {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin: 0.5rem 0;
   animation: waving 1.5s infinite ease-in-out;
   display: inline-block; 
@@ -50,11 +50,10 @@ text-align:center;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.5rem 0;
   text-align: center;
-
-  
+  color: #000000;
 }
 
 .hero-name-highlight {
@@ -62,8 +61,8 @@ h1 {
 }
 
 .hero-title h2 {
-  font-size: 1.9rem;
-  color: #0e0d0d;
+  font-size:2.2rem;
+  color: #000000;
   margin: 0.5rem 0;
   font-weight: 800;
   line-height: 1.1;
@@ -147,10 +146,11 @@ h1 {
 align-self: center;
 text-align: center;
 justify-self: center;
+color: #000000;
 }
 
 .intro-text {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.4;
 text-overflow: clip;
   margin-bottom: 0.5rem;
@@ -160,10 +160,19 @@ text-overflow: clip;
   white-space: wrap;
   overflow: hidden;
   margin-bottom: 0.5rem;
-  font-weight: 800;
+  font-weight: bolder;
   max-width: 800px;
 }
 
+
+#name {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+#greeting {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
 .connect-text {
   color: goldenrod;
   font-weight: bold;
@@ -222,6 +231,7 @@ text-overflow: clip;
   font-weight: 800;
 line-height: normal;
 margin-bottom: -23px;
+color: #000000;
 }
 
 .social-text {
@@ -229,6 +239,7 @@ margin-bottom: -23px;
   line-height: 1.4;
   text-overflow: clip;
   margin-bottom: -1rem;
+  color: #000000;
 }
 .intro-social-icons a {
   display: inline-flex;
@@ -317,18 +328,15 @@ margin-bottom: -23px;
   }
 
  h1, h2, h3 {
-  color: #020202;
+  color: #000000;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
-  font-size: 2rem;
+  align-self:center;
   text-align: center;
-  text-align: center;
-  justify-content: center;
+  justify-self: center;
   margin-top: 2rem;
-
 }
-
   .intro-heading {
     font-size: 1.9rem;
     font-weight: 800;

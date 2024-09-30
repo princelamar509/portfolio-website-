@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="avatar-info">
           <h2>Madeus Rene</h2>
-          <p> < FaCode  className='info-icon1'/> Frontend Developer</p>
+          <p> < FaCode className='info-icon1'/> Frontend Developer</p>
           <p><FaMapMarkerAlt  className='info-icon2'/>  Indianapolis, IN</p>
         </div>
       </div>
@@ -29,16 +29,16 @@ const Navbar = () => {
       </div>
       <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
         <Link to="/" onClick={toggleMenu} className='nav-item'> 
-          <FaHome color='#fff' size={33}/> Home 
+          <FaHome size={33}/> Home 
         </Link>
         <Link to="/about" onClick={toggleMenu} className='nav-item'>
-          <FaUser color='#fff' size={33}/> About
+          <FaUser size={33}/> About
         </Link>
         <Link to="/projects" onClick={toggleMenu} className='nav-item'>
-          <FaCode color='#fff' size={33}/> Projects
+          <FaCode     size={33}  /> Projects
         </Link>
         <Link to="/resume" onClick={toggleMenu} className='nav-item'>
-          <FaFileAlt color='#fff' size={33}/> Resume
+          <FaFileAlt size={33}/> Resume
         </Link>
         <Clock />
       </div>
