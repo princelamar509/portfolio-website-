@@ -19,13 +19,13 @@
     align-items: center;
     margin-bottom: 30px;
     gap: 10px;
-max-width: fit-content;
+
   }
   
   .filter-button {
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 800;
     border: 2px solid goldenrod;
     background-color: transparent;
@@ -33,8 +33,7 @@ max-width: fit-content;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin-top: 10px;
-    max-width: fit-content;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   .filter-button:hover, .filter-button.active {
