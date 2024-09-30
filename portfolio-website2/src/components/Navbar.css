@@ -107,7 +107,7 @@ overflow: hidden;
   margin-top: 5px;
   padding: 5px;
   border-radius: 5px;
-
+  justify-content: start;
 }
 
 .info-icon1
@@ -124,9 +124,9 @@ overflow: hidden;
 .nav-links {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
   list-style: none;
   margin-top: 10px;
   transition: transform 0.4s ease;
@@ -142,6 +142,7 @@ overflow: hidden;
   bottom: 6rem;
 font-weight: bolder;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: start;
 gap: 10px;
@@ -153,7 +154,7 @@ gap: 10px;
 .nav-item svg {
   margin-right: 10px;
   color: #DAA520;
-  
+
 }
 
 .nav-item::before  {
@@ -169,6 +170,7 @@ gap: 10px;
   transform-origin: left;
   transition: transform 0.3s ease;
   overflow: hidden;
+align-self: start;
 
 }
 
@@ -216,7 +218,9 @@ gap: 10px;
     width: 60%;
     height: 100vh;
     transform: translateX(-100%);
-    align-items: center;
+    align-items: start;
+    justify-content: start;
+    transition: transform 0.3s ease;
   }
   .avatar-section {
     margin: 0 auto;
@@ -227,6 +231,7 @@ gap: 10px;
 
   .avatar-info {
     text-align: center;
+   
   }
 
  
@@ -236,7 +241,7 @@ gap: 10px;
   }
 
   .avatar-info h2 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 
   }
 
@@ -246,7 +251,7 @@ gap: 10px;
   }
 
   .nav-item {
-    justify-content: center;
+    justify-content: start;
     font-size: 2rem;
     padding: 10px;
 
