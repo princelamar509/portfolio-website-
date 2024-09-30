@@ -17,23 +17,22 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    overflow: hidden;
     gap: 10px;
+
   }
   
   .filter-button {
     padding: 10px 20px;
     margin: 0 10px;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.3rem;
+    font-weight: 800;
     border: 2px solid goldenrod;
     background-color: transparent;
     color: #000000;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    overflow: hidden;
-font-size:22px;
-margin-bottom: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
   }
   
   .filter-button:hover, .filter-button.active {
