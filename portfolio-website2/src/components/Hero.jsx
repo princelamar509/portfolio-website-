@@ -37,8 +37,7 @@ function Hero() {
             self-taught Front-end developer with a passion for creating
             intuitive and dynamic user experiences. Armed with curiosity and
             coffee, I turn pixels into seamless interactions that{" "}
-            <strong className="connect-text">(hopefully)</strong> make the web
-            a better place!
+            <strong className="connect-text">(hopefully)</strong> don't break the internet !
           </p>
 
           <div className="intro-avatar">

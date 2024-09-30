@@ -86,10 +86,11 @@
   
 
   .project-card p {
-    font-size: 1rem;
+    font-size: 1.7rem;
     color: #3e3d3d;
     line-height: 1.6;
     margin-bottom: 20px;
+    font-weight: 700;
   }
   
 

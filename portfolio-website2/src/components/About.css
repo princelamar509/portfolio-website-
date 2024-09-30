@@ -26,6 +26,8 @@
   margin-top: 50px;
   margin-bottom: 2rem;
   opacity: 1;
+  font-weight: 800;
+  font-size: 1.7rem;
 }
 
 .about-text h2 {
@@ -37,7 +39,7 @@
 
 
 .about-text p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   color: #333;
   margin-bottom: 20px;

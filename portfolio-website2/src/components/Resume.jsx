@@ -101,7 +101,7 @@ const CV = () => {
           A self-motivated developer with an insatiable curiosity for modern web technologies. I enjoy tackling complex problems and creating efficient, user-friendly solutions. Always open to learning new tools and techniques to stay on the cutting edge of the front-end ecosystem.
         </p>
         <p>
-          Link to Portfolio: <a href="https://princelamar509.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer">https://princelamar509.github.io/portfolio-website/</a>
+          Link to Portfolio: <a href="https://princelamar509.github.io/portfolio-website-/" target="_blank" rel="noopener noreferrer">https://princelamar509.github.io/portfolio-website/</a>
         </p>
       </section>
     </div>
