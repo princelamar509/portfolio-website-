@@ -3,6 +3,7 @@ import './Skills.css';
 import D3Icon from '../components/D3Icon';
 import MarqueeButton from '../components/MarqueeButton';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaSass, FaBootstrap,  FaGithub, FaApple, FaMicrosoft } from 'react-icons/fa';
+import ScrollAnimation from "./ScrollAnimation";
 const Skills = () => { 
   const [showMarquee, setShowMarquee] = useState(false);
 
@@ -27,8 +28,10 @@ const Skills = () => {
    
 
   return (
+  
     <section id="skills" className="skills-section">
       <div className="skills-container">
+        <ScrollAnimation delay={0.2} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
         <div className="skills-header">
           <h2>Skills <strong className="connect-text">/</strong> Toolkit</h2>
         </div>
@@ -38,8 +41,10 @@ const Skills = () => {
               <div className="skill-icon">{skill.icon}</div>
               <div className="skill-name">{skill.name}</div>
             </div>
+
           ))}
         </div>
+        </ScrollAnimation>
         <MarqueeButton onClick={handleButtonClick} />
 
         {showMarquee && (
@@ -51,7 +56,9 @@ const Skills = () => {
                 <div className="marquee-item1" key={index}>
 
                   {skill.icon} 
+
                 </div>
+
               ))}
             </div>
          
@@ -75,9 +82,6 @@ const Skills = () => {
               ))}
             </div>
 
-
-           
-  
           </div>
         </figcaption>
         )}

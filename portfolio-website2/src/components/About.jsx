@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Skills from './Skills';
 import { FaAngleRight } from 'react-icons/fa';
 import './About.css';
-
+import ScrollAnimation from "./ScrollAnimation";
 function About() {
   const [animate, setAnimate] = useState(false);
 
@@ -58,6 +58,7 @@ function About() {
 
       <Skills />
 
+      <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <fieldset>
       <legend className='achievements'>Achievements</legend>
       <ul>
@@ -68,7 +69,9 @@ function About() {
         <br/>
         <li className='note'> Currently learning  <span className='bold1'> Relational Database <progress id='file' value="30" min="0" max="100"></progress></span></li>
       </ul>
+  
     </fieldset>
+    </ScrollAnimation>
  
     </div>
 

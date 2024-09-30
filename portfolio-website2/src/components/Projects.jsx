@@ -3,7 +3,7 @@ import './Projects.css';
 import { FaGithub } from 'react-icons/fa';
 
 
-// Import snapshots from assets folder
+
 import moneyTransferImg from '../assets/money-transfer.png';
 import musicAppImg from '../assets/music-app.png';
 import shoppingCartImg from '../assets/shoppingimage.png';

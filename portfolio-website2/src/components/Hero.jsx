@@ -3,7 +3,7 @@ import "./Hero.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import profilePicture from "../assets/profile-picture.webp";
 import TextToSpeechButton from "./Speech-Button";
-
+import ScrollAnimation from "./ScrollAnimation";
 function Hero() {
   return (
     <section className="hero-section">
@@ -40,7 +40,10 @@ function Hero() {
             <strong className="connect-text">(hopefully)</strong> don't break the internet !
           </p>
 
+
+          <ScrollAnimation delay={0.1} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
           <div className="intro-avatar">
+
             <img
               src={profilePicture}
               alt="Avatar"
@@ -51,12 +54,16 @@ function Hero() {
             <div className="emoji">😄</div>
             <div className="emoji">😎</div>
           </div>
+        
 
+          <div className="social-section">
           <h3 className="social-heading">Find Me Online</h3>
           <p className="social-text">
             Feel free to <strong className="connect-text">connect</strong> with
             me.
           </p>
+
+          </div>
 
           <div className="intro-social-icons">
             <a
@@ -64,33 +71,41 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub size={40} />
+              <FaGithub size={30} />
             </a>
             <a
               href="https://www.linkedin.com/in/madeus-rene-294196318/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={40} />
+              <FaLinkedin size={30} />
             </a>
             <a
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter size={40} />
+              <FaTwitter size={30} />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={40} />
+              <FaInstagram size={30} />
             </a>
           </div>
+
+          </ScrollAnimation>
+        
         </div>
+
       </div>
+
+
+      
     </section>
+
   );
 }
 

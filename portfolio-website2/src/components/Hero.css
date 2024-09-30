@@ -40,6 +40,7 @@ text-align:center;
   display: inline-block; 
 }
 
+
 @keyframes waving {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(15deg); }
@@ -180,19 +181,12 @@ text-overflow: clip;
 
 
 .intro-avatar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
+  position: relative;
+  display: inline-block
+
 }
-
-
-.intro-avatar {
-  position: relative; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.intro-avatar:hover .avatar-container {
+  transform: scale(1.1);
 }
 
 .intro-avatar img {
@@ -200,19 +194,69 @@ text-overflow: clip;
   height: 200px;
   border-radius: 50%;
   transition: transform 0.3s ease;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  animation: bounce 3s infinite;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-duration: 2s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.social-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  line-height: 1.1;
+  white-space: wrap;
 }
 
 
-.intro-avatar .emoji {
+.emoji {
   position: absolute;
-  font-size: 2rem; 
+  font-size: 2rem;
   opacity: 0;
-  pointer-events: none; 
-  transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
 }
 
+/* Positioning Emojis */
+.emoji:nth-child(2) {
+  top: -110px;
+  left: 40px;
+}
+
+.emoji:nth-child(3) {
+  top: -20px;
+  right: -50px;
+}
+
+.emoji:nth-child(4) {
+  bottom: -70px;
+  right: 40px;
+}
+
+/* Show Emojis on Hover */
 .intro-avatar:hover .emoji {
   opacity: 1;
+  transform: translateY(-5px); /* Slightly move emoji up for effect */
 }
 
 .intro-avatar:hover img {

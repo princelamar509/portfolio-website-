@@ -5,15 +5,17 @@ const ScrollTrigger = ({ children }) => {
   const ref = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   
-  // Using react-spring to animate multiple properties: opacity, transform (Y-axis), and scale
+
   const animation = useSpring({
     opacity: isVisible ? 1 : 0,
-    transform: isVisible ? 'translateY(0px) scale(1)' : 'translateY(100px) scale(0.9)', // Adds scaling effect and vertical movement
+    transform: isVisible ? 'translateY(0px) scale(1)' : 'translateY(100px) scale(0.9)',
     config: {
-      tension: 180, // Higher tension for faster return animation
-      friction: 25, // Reduced friction for smoother animations
+      tension: 180, 
+      mass: 0.5,
+      friction: 25, 
     },
   });
+
 
   useEffect(() => {
     const handleIntersection = (entries) => {
@@ -21,7 +23,7 @@ const ScrollTrigger = ({ children }) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
         } else {
-          setIsVisible(false); // Optionally keep it animated in/out when scrolled
+          setIsVisible(false); 
         }
       });
     };

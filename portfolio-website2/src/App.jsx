@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ScrollTrigger from './components/ScrollTrigger';
 import Preloader from './components/Preloader'; 
 import React, { useState, useEffect } from 'react';
+
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
