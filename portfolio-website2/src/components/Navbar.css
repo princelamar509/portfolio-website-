@@ -139,7 +139,7 @@ overflow: hidden;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.8rem;
-  bottom: 6rem;
+  bottom: 7rem;
 font-weight: bolder;
   display: flex;
   align-items: center;
@@ -168,13 +168,12 @@ gap: 10px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
-  overflow: hidden;
+
 }
 
 .nav-item:hover::before {
   transform: scaleX(1);
   overflow: hidden;
-
 }
 
 
@@ -250,9 +249,8 @@ gap: 10px;
   .nav-item {
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    padding: 10px;
-
+    font-size: 1.5rem;
+bottom: 3rem;
   }
 
   .clock h2 {
