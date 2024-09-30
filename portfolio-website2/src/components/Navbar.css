@@ -4,14 +4,14 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 495px;
+  max-width: 495px;
+  max-height: 99%;
   background: #1f1f1f;
   box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease;
   transform: translateX(-100%);
   z-index: 100;
   padding: 20px 0;
@@ -42,8 +42,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-max-width: fit-content;
-box-shadow: 0px 8px 20px rgba(167, 159, 159, 0.309);
+max-width: 495px;
+background: #1f1f1f;
+box-shadow: 0px 8px 20px rgba(167, 159, 159, 0.128);
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -111,26 +112,25 @@ overflow: hidden;
   justify-content: center;
   text-align: center;
   list-style: none;
-  width: 100%;
   margin-top: 10px;
   transition: transform 0.4s ease;
 }
 .nav-item {
+  position: relative;
   width: 100%;
-  padding: 15px 0;
+  padding: 10px 20px;
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  bottom: 7rem;
+font-weight: bolder;
   display: flex;
   align-items: center;
-  justify-content: start;
-  position: relative;
-  margin-bottom: 95px;
+  justify-content: flex-start;
+gap: 10px;
   z-index: 1;
   margin-left: 30px;
   max-width: 470px;
-  overflow: hidden;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -145,8 +145,7 @@ overflow: hidden;
   background-color: #DAA520;
   color: #000;
   z-index: 1;
-  text-decoration: none;
-  overflow: hidden;
+  transform: scale(1.1);
 }
 
 .nav-links.active {

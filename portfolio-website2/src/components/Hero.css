@@ -20,7 +20,7 @@ text-align: center;
   max-width: 1300px;
   padding: 1rem;
   margin: 0 auto;
-text-align: center;
+text-align:start;
 }
 
 
@@ -54,6 +54,7 @@ h1 {
   font-size: 2.5rem;
   margin: 0.5rem 0;
   text-align: start;
+
   
 }
 
@@ -96,8 +97,8 @@ h1 {
 
 
 .hero-image img {
-  width: 370px !important;
-  height: 370px !important;
+  width: 270px !important;
+  height: 270px !important;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -167,8 +168,8 @@ text-overflow: clip;
 }
 
 .intro-avatar img {
-  width: 275px;
-  height: 275px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
@@ -302,10 +303,6 @@ margin-bottom: -23px;
   line-height: 1.2;
   margin-bottom: 10px;
   font-size: 1.9rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
 }
 
   .intro-heading {
