@@ -1,5 +1,5 @@
 import React from "react";
-import {  FaFilePdf } from "react-icons/fa";  // Import the download icon
+import {  FaFilePdf } from "react-icons/fa";  
 import pdf from "../assets/resume.pdf"; 
 import './Resume.css';
 import ScrollAnimation from "./ScrollAnimation";

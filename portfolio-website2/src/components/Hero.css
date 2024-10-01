@@ -8,13 +8,14 @@ margin-top: 1.7rem;
 align-items: center;
 justify-content: center;
 text-align: center;
+
 }
 
 
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
   width: 100%;
   padding: 1rem;
   margin: 0 auto;

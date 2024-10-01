@@ -1,4 +1,4 @@
-// components/MarqueeButton.js
+
 import React from 'react';
 import './MarqueeButton.css';
 

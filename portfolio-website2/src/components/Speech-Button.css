@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: space-between;
     transition: box-shadow 0.3s ease;
-
+    z-index: 10;
   }
   
   .speech-button-card:hover {
@@ -52,6 +52,7 @@
     box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.15);
     z-index: 10;
     transition: opacity 0.3s ease;  
+    
   }
   
   .note-card ul {
