@@ -81,7 +81,7 @@ const CV = () => {
           <li>Advanced CSS, Sass, and Bootstrap – FreeCodeCamp</li>
           <li>jQuery – FreeCodeCamp</li>
         </ul>
-        <strong>Certifications:</strong>
+        <strong >Certifications:</strong>
         <ul>
           <li>JavaScript Algorithms and Data Structures – FreeCodeCamp</li>
           <li>Responsive Web Design – FreeCodeCamp</li>
