@@ -8,7 +8,7 @@ const CV = () => {
     <div className="resume-container">
     <div style={{ fontFamily: "Times New Roman', Times, serif", padding: "20px" }}>
       <header style={{ marginBottom: "20px" }}>
-        <h1>Madeus Rene</h1>
+        <h1 className="resume-title">Madeus Rene</h1>
         <h2>Front-End Developer</h2>
         <p>Location: Indianapolis, Indiana</p>
         <p>Email: <a href="mailto:mrmadeus1@gmail.com">mrmadeus1@gmail.com</a></p>
