@@ -1,5 +1,5 @@
 .resume-container {
-  max-width: 1300px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   align-items: start;
@@ -15,6 +15,7 @@ h3 {
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 10px;
+
 }
 
 a {

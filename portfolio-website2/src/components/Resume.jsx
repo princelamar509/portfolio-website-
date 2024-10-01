@@ -2,6 +2,7 @@ import React from "react";
 import {  FaFilePdf } from "react-icons/fa";  // Import the download icon
 import pdf from "../assets/resume.pdf"; 
 import './Resume.css';
+import ScrollAnimation from "./ScrollAnimation";
 const CV = () => {
   return (
     <div className="resume-container">
@@ -39,7 +40,7 @@ const CV = () => {
           Self-taught and passionate Front-End Developer with a strong foundation in responsive web design, user-centric development, and modern front-end technologies. Adept at creating intuitive, accessible, and visually appealing websites. Experienced in collaborating with clients and teams to deliver high-quality web solutions. Eager to continuously learn and contribute to dynamic teams that value creativity, performance, and innovation.
         </p>
       </section>
-
+      <ScrollAnimation delay={0.1} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <section>
         <h2>Technical Skills</h2>
         <ul>
@@ -50,7 +51,8 @@ const CV = () => {
           <li><strong >Additional Skills:</strong> Problem Solving, Agile Methodology, Effective Communication</li>
         </ul>
       </section>
-
+      </ScrollAnimation>
+      <ScrollAnimation delay={0.1} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <section>
         <h2>Professional Experience</h2>
         <h3>Freelance Front-End Developer | Self-Employed | Fiverr</h3>
@@ -66,7 +68,8 @@ const CV = () => {
           <li>Enhanced website SEO performance, resulting in higher search engine rankings.</li>
         </ul>
       </section>
-
+      </ScrollAnimation>
+      <ScrollAnimation delay={0.2} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <section>
         <h2>Education & Certifications</h2>
         <h3>Self-Taught Developer</h3>
@@ -87,7 +90,9 @@ const CV = () => {
           <li>Data Visualization With D3 - FreeCodeCamp</li>
         </ul>
       </section>
+      </ScrollAnimation>
 
+      <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <section>
         <h2>Languages</h2>
         <ul>
@@ -106,6 +111,7 @@ const CV = () => {
           Link to Portfolio: <a href="https://princelamar509.github.io/portfolio-website-/" target="_blank" rel="noopener noreferrer">https://princelamar509.github.io/portfolio-website-/</a>
         </p>
       </section>
+       </ScrollAnimation>
     </div>
     </div>
   );
