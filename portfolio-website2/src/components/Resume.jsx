@@ -36,7 +36,7 @@ const CV = () => {
 
       <section>
         <h2>Summary</h2>
-        <p>
+        <p className="summary">
           Self-taught and passionate Front-End Developer with a strong foundation in responsive web design, user-centric development, and modern front-end technologies. Adept at creating intuitive, accessible, and visually appealing websites. Experienced in collaborating with clients and teams to deliver high-quality web solutions. Eager to continuously learn and contribute to dynamic teams that value creativity, performance, and innovation.
         </p>
       </section>
@@ -102,7 +102,7 @@ const CV = () => {
         </ul>
       </section>
 
-      <section>
+      <section className="additional-info">
         <h2>Additional Information</h2>
         <p>
           A self-motivated developer with an insatiable curiosity for modern web technologies. I enjoy tackling complex problems and creating efficient, user-friendly solutions. Always open to learning new tools and techniques to stay on the cutting edge of the front-end ecosystem.

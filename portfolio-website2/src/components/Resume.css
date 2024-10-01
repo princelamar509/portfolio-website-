@@ -67,6 +67,12 @@ section h2 {
   
 }
 
+.summary {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 1.5em;
+}
+
 
 ul {
   list-style: none;
@@ -166,6 +172,13 @@ footer {
     100% {
       transform: translateX(0);
     }
+  }
+
+
+  .additional-info {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1.5em;
   }
 
   @media screen and (max-width: 768px) {  
