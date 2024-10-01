@@ -46,7 +46,7 @@ function About() {
         alt="img"
       />
       <div className="about-text">
-        <h2>More <strong className="connect-text"> About </strong> Me</h2>
+        <h2>More <strong className="connect-text1"> About </strong> Me</h2>
         <p className = "about-para">
 
         I’m <strong className="connect-text"> passionate </strong> about creating sleek, responsive web applications that not only look great but also feel intuitive to use—when the code behaves, that is! 
