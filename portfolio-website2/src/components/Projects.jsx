@@ -71,6 +71,7 @@ const Projects = () => {
   const categories = ['All', 'React', 'JavaScript', 'HTML/CSS'];
 
   return (
+
     <section id="projects" className="projects-section">
       <div className="projects">
         <h2>Projects</h2>
@@ -104,14 +105,11 @@ const Projects = () => {
                 <FaGithub style={{ marginRight: '8px' }} /> View Project
               </a>
             </div>
-
           ))}
         </div>
       </div>
-
- 
+  
     </section>
-
   );
 };
 

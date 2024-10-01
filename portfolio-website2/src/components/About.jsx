@@ -49,9 +49,9 @@ function About() {
         <h2>More <strong className="connect-text"> About </strong> Me</h2>
         <p className = "about-para">
 
-        I’m passionate about creating sleek, responsive web applications that not only look great but also feel intuitive to use—when the code behaves, that is! 
+        I’m <strong className="connect-text"> passionate </strong> about creating sleek, responsive web applications that not only look great but also feel intuitive to use—when the code behaves, that is! 
         When I'm not wrestling with stubborn divs that refuse to center, you’ll find me exploring new technologies. 
-        For me, it's not just about building something that works—it's about creating something that connects, captivates, and stands out.
+        For me, it's not just about building something that works—it's about creating something that connects <strong className="connect-text"> captivates </strong> and stands out.
         </p>
       
       </div>

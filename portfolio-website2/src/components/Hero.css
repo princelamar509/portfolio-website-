@@ -2,12 +2,11 @@
 .hero-section {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
   color: #000000; 
-margin-top: 2rem;
+margin-top: 1.7rem;
 align-items: center;
 justify-content: center;
-text-align: center;
 text-align: center;
 }
 
@@ -20,6 +19,7 @@ text-align: center;
   padding: 1rem;
   margin: 0 auto;
 text-align:center;
+margin-top: 2rem;
 }
 
 
@@ -51,10 +51,11 @@ text-align:center;
 }
 
 h1 {
-  font-size: 2.6rem;
-  margin: 0.5rem 0;
+  font-size: 2.8rem;
+  margin: 0 auto;
   text-align: center;
   color: #000000;
+  white-space: nowrap;
 }
 
 .hero-name-highlight {
@@ -134,9 +135,11 @@ h1 {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1rem;
+ padding: 0 auto;
+  margin: 0 auto;
   line-height: 1.1;
-  white-space: wrap;
+  white-space: nowrap;
+
 }
 
 .intro-heading {
@@ -144,24 +147,24 @@ h1 {
   font-weight: 800;
   white-space: nowrap;
   margin-bottom: 20px;
-align-self: center;
-text-align: center;
-justify-self: center;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
 color: #000000;
 }
 
 .intro-text {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   line-height: 1.4;
-text-overflow: clip;
+  text-overflow: clip;
   align-self:center;
   text-align: center;
   justify-self: center;
-  white-space: wrap;
+ white-space: wrap;
   overflow: hidden;
   margin-bottom: 0.5rem;
   font-weight: bolder;
-  max-width: 800px;
+  max-width: 870px;
 }
 
 
@@ -237,18 +240,18 @@ text-overflow: clip;
 
 
 .emoji:nth-child(2) {
-  top: -60px;
-  left: 20px;
+  top: -20px;
+  left: -30px;
 }
 
 .emoji:nth-child(3) {
-  top: -20px;
-  right: -30px;
+  top: 20px;
+  right: -40px;
 }
 
 .emoji:nth-child(4) {
-  bottom: -40px;
-  right: 20px;
+  bottom: -20px;
+  left: -30px;
 }
 
 
@@ -287,8 +290,8 @@ margin-bottom: 20px;
   display: inline-flex;
   text-decoration: none;
   font-size: 28px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   color: #fcfcfc;
   justify-content: center;
   align-items:  center;
@@ -298,13 +301,14 @@ margin-bottom: 20px;
   transition: 0.3s ease-in;
   overflow: hidden;
   z-index: 10;
+ 
 }
 
 .intro-social-icons a::before {
   content: "";
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   background: goldenrod;
   border-radius: 50%;
   top: 50%;

@@ -29,6 +29,7 @@ function Hero() {
         <TextToSpeechButton />
 
         <div className="introduction-section">
+        <ScrollAnimation delay={0.4} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
           <h2 className="intro-heading">
             Let Me <strong className="connect-text">Introduce</strong> Myself
           </h2>
@@ -39,6 +40,8 @@ function Hero() {
             coffee, I turn pixels into seamless interactions that{" "}
             <strong className="connect-text">(hopefully)</strong> don't break the internet !
           </p>
+      
+        </ScrollAnimation>
 
 
           <ScrollAnimation delay={0.1} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
@@ -71,28 +74,28 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub  size={50}/>
+              <FaGithub  size={40}/>
             </a>
             <a
               href="https://www.linkedin.com/in/madeus-rene-294196318/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={50} />
+              <FaLinkedin size={40} />
             </a>
             <a
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter size={50} />
+              <FaTwitter size={40} />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={50} />
+              <FaInstagram size={40} />
             </a>
           </div>
 

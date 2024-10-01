@@ -12,6 +12,26 @@
 
 .footer p {
   margin: 0;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: bold;
+animation: text 3s ease-in-out infinite;
+
 }
+
+@keyframes text {
+  0% {
+    color: rgb(198, 198, 192);
+  }
+  50% {
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    color: rgb(175, 175, 174);
+  }
+}
+
+
+
+
+
+
