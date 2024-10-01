@@ -37,10 +37,12 @@ const CV = () => {
       <section>
         <h2>Summary</h2>
         <p className="summary">
-          Self-taught and passionate Front-End Developer with a strong foundation in responsive web design, user-centric development, and modern front-end technologies. Adept at creating intuitive, accessible, and visually appealing websites. Experienced in collaborating with clients and teams to deliver high-quality web solutions. Eager to continuously learn and contribute to dynamic teams that value creativity, performance, and innovation.
+          Self-taught and passionate Front-End Developer with a strong foundation in responsive web design, user-centric development, and modern front-end technologies. Adept at creating intuitive, accessible, and visually appealing websites. Experienced in collaborating with clients and teams to deliver high-quality web solutions. 
+          Eager to continuously learn and contribute to dynamic teams that value creativity, performance, and innovation.
         </p>
       </section>
       <ScrollAnimation delay={0.1} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
+      
       <section>
         <h2>Technical Skills</h2>
         <ul>
@@ -101,7 +103,8 @@ const CV = () => {
           <li><strong>Haitian Creole:</strong> Fluent</li>
         </ul>
       </section>
-
+      </ScrollAnimation>
+      <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <section className="additional-info">
         <h2>Additional Information</h2>
         <p>
@@ -113,7 +116,9 @@ const CV = () => {
       </section>
        </ScrollAnimation>
     </div>
+
     </div>
+  
   );
 };
 
