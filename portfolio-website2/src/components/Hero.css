@@ -305,7 +305,7 @@ color: #000000;
   transition: 0.3s ease-in;
   overflow: hidden;
   z-index: 10;
-bottom: 30px;
+bottom: 20px;
 }
 
 .intro-social-icons a::before {
@@ -373,22 +373,19 @@ bottom: 30px;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
-
     padding: 1rem;
     margin: 0 auto;
     text-align: center;
-    margin-top: 2rem;
+
   }
 
  h1, h2, h3 {
   color: #000000;
   font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 10px;
   align-self:center;
   text-align: center;
   justify-self: center;
-  margin-top: 2rem;
+  margin-top: 1.3rem;
 }
   .intro-heading {
     font-size: 1.9rem;
@@ -398,7 +395,7 @@ bottom: 30px;
   }
   
   .intro-text {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     line-height: 1.4;
     font-weight: 700;
   }  
