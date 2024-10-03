@@ -7,9 +7,7 @@
 }
 
 .chatbot-icon {
-background: rgb(12, 12, 12);
   padding: 15px;
-  border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
