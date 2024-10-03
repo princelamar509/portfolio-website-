@@ -274,7 +274,6 @@ color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
 
 .social-heading {
@@ -283,12 +282,11 @@ color: #000000;
 line-height: normal;
 white-space: nowrap;
 color: #000000;
-margin-bottom: 20px;
+
 }
 
 .social-text {
   font-size: 1.7rem;
-  line-height: 1.4;
   text-overflow: clip;
   color: #000000;
 }
@@ -307,7 +305,7 @@ margin-bottom: 20px;
   transition: 0.3s ease-in;
   overflow: hidden;
   z-index: 10;
- 
+bottom: 30px;
 }
 
 .intro-social-icons a::before {
@@ -319,7 +317,7 @@ margin-bottom: 20px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
   z-index: -1;
   transition: 0.3s ease-in;
 

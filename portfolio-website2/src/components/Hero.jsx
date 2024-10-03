@@ -58,7 +58,8 @@ function Hero() {
             <div className="emoji">😎</div>
           </div>
         
-
+          </ScrollAnimation>
+          <ScrollAnimation delay={0.2} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
           <div className="social-section">
           <h3 className="social-heading">Find Me Online</h3>
           <p className="social-text">
