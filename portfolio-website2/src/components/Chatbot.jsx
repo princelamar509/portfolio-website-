@@ -18,7 +18,7 @@ const Chatbot = () => {
   return (
     <div className="chatbot-container">
       <div className="chatbot-icon" onClick={toggleChat}>
-        <ChatIcon size={50} color="goldenrod" /> 
+        <ChatIcon size={46} color="goldenrod" /> 
       </div>
 
       {isOpen && (
