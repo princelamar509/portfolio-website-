@@ -1,0 +1,46 @@
+/* Chatbot.css */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-icon {
+background: rgb(12, 12, 12);
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-window {
+  background-color: rgb(223, 217, 188);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 350px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+}
+
+.chatbot-window p {
+  margin: 0 0 15px;
+}
+
+.chatbot-window button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #2b3540;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-window button:hover {
+  background-color: #2b3540;
+}
