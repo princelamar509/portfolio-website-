@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
         <div className="avatar-info">
           <h2>Madeus Rene</h2>
-          <p> < FaCode className='info-icon1'/> Frontend Developer</p>
+          <p> < FaCode className='info-icon1'/> Front-End Developer</p>
           <p><FaMapMarkerAlt  className='info-icon2'/>  Indianapolis, IN</p>
         </div>
       </div>
