@@ -2,7 +2,7 @@
 .chatbot-container {
   position: fixed;
   bottom: 0px;
-  right: 20px;
+  right: 0px;
   z-index: 1000;
 }
 
@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .chatbot-window {
