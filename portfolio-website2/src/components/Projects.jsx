@@ -8,7 +8,7 @@ import moneyTransferImg from '../assets/money-transfer.png';
 import musicAppImg from '../assets/music-app.png';
 import shoppingCartImg from '../assets/shoppingimage.png';
 import diceGameImg from '../assets/dice-gameimage.png';
-import mapLocationImg from '../assets/maplocation.png'; 
+import dashboard from '../assets/dashboard.jpeg'; 
 import landingPageImg from '../assets/landing-pageimage.png';
 
 const Projects = () => {
@@ -19,6 +19,13 @@ const Projects = () => {
         "This is an International Money Transfer Project. Created using REACT(JSX) + CSS. I didn't use any API for this project, just to make it more of a DIY adventure. It’s a real testament to how amusing coding can be.",
       link: 'https://princelamar509.github.io/transfer-app/',
       snapshot: moneyTransferImg, 
+      category: 'React',
+    },
+    {
+      title: 'Dashboard',
+      description: 'This is a Home automation Dashboard Project. I created using REACT(JSX) + CSS + Freeweather API .',
+      link: 'https://princelamar509.github.io/Maplocation/',
+      snapshot: dashboard, 
       category: 'React',
     },
     {
@@ -45,13 +52,7 @@ const Projects = () => {
       snapshot: diceGameImg, 
       category: 'JavaScript',
     },
-    {
-      title: 'Map Location',
-      description: 'This is a Map/Location Search Project using multiple Google APIs. Created using JavaScript + CSS.',
-      link: 'https://princelamar509.github.io/Maplocation/',
-      snapshot: mapLocationImg, 
-      category: 'JavaScript',
-    },
+  
     {
       title: 'Landing Page',
       description: 'This is a Landing Page Project. Created using HTML/CSS.',
