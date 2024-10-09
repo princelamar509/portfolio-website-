@@ -8,7 +8,7 @@ const HappyDogBotIcon = ({ size = 34, color = '#000' }) => {
       width={size}
       height={size}
       viewBox="0 0 24 24"
-      fill="#fff"
+      fill="none"
       stroke={color}
       strokeWidth="2"
       strokeLinecap="round"

@@ -29,7 +29,7 @@ function Hero() {
         <TextToSpeechButton />
 
         <div className="introduction-section">
-        <ScrollAnimation delay={0.4} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
+        <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
           <h2 className="intro-heading">
             Let Me <strong className="connect-text">Introduce</strong> Myself
           </h2>
@@ -59,7 +59,7 @@ function Hero() {
           </div>
         
           </ScrollAnimation>
-          <ScrollAnimation delay={0.2} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
+          <ScrollAnimation delay={0.4} duration={0.9} easing={[0.52, 0, 0.58, 1]}>
           <div className="social-section">
           <h3 className="social-heading">Find Me Online</h3>
           <p className="social-text">
@@ -75,28 +75,28 @@ function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub  size={40}/>
+              <FaGithub  size={30}/>
             </a>
             <a
               href="https://www.linkedin.com/in/madeus-rene-294196318/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin size={40} />
+              <FaLinkedin size={30} />
             </a>
             <a
               href="https://twitter.com/yourusername"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaTwitter size={40} />
+              <FaTwitter size={30} />
             </a>
             <a
               href="https://www.instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaInstagram size={40} />
+              <FaInstagram size={30} />
             </a>
           </div>
 
