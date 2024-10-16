@@ -84,26 +84,38 @@ margin-left: 20px;
   padding-top: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
-  overflow: hidden;
+opacity: 1;
+ position: relative;
 }
 
 .about-image img {
   max-width: 50%;
   height: auto;
   border-radius: 8px;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
   box-shadow: 0 14px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   margin-top: 40px;
-  overflow: hidden;
-  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .about-image img:hover {
   transform: scale(1.08);
-  box-shadow: 0 14px 20px rgba(9, 4, 4, 0.955);
+  box-shadow: 0 -17px 20px rgba(255, 255, 255, 0.41);
   filter: grayscale(100%);
+  animation: hue 3s infinite;
+  animation-delay: 1s;
 }
+@keyframes hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+ 
+
+
 
 
 

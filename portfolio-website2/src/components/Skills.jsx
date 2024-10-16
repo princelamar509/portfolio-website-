@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import './Skills.css';
 import D3Icon from '../components/D3Icon';
 import MarqueeButton from '../components/MarqueeButton';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaSass, FaBootstrap,  FaGithub, FaApple, FaMicrosoft } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs,  FaSass, FaBootstrap,  FaGithub, FaApple, FaMicrosoft } from 'react-icons/fa';
 import ScrollAnimation from "./ScrollAnimation";
 const Skills = () => { 
   const [showMarquee, setShowMarquee] = useState(false);
+
+  const NextJsIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" height="1.5em" width="1.5em">
+    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1.46-5.31l-3.14-4.56v4.52H9.71v-8.91h1.29l3.13 4.53V8.99h1.29v8.92h-1.29z"/>
+  </svg>
+  );
 
   const skills = [
     { name: 'HTML', color: 'bar-html', icon: <FaHtml5  size="1.5em"/>, percentage: '90%' },
@@ -17,6 +23,7 @@ const Skills = () => {
     { name: 'D3.js', color: 'bar-d3', icon: <D3Icon />, percentage: '50%' },
     { name: 'GitHub', color: 'bar-github', icon: <FaGithub size="1.5em" />, percentage: '65%' },
     { name: 'Node.js', color: 'bar-node', icon: <FaNodeJs  size="1.5em" />, percentage: '70%' },
+    { name: 'Next.js', color: 'bar-next', icon: <NextJsIcon />, percentage: '70%' },
     { name: 'macOS', color: 'bar-macos', icon: <FaApple   size="1.5em"/>},
     { name: 'Visual Studio Code', color: 'bar-vscode', icon: <FaMicrosoft  size="1.5em"/> },
   ];

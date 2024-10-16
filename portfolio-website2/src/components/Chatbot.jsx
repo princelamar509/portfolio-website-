@@ -18,14 +18,14 @@ const Chatbot = () => {
   return (
     <div className="chatbot-container">
       <div className="chatbot-icon" onClick={toggleChat}>
-        <ChatIcon size={46} color="goldenrod" /> 
+        <ChatIcon size={43} color="goldenrod" /> 
       </div>
 
       {isOpen && (
         <div className="chatbot-window">
           {!hasInteracted ? (
             <>
-              <p>Hello! Welcome to my website. How can I help you navigate better?</p>
+              <p>Hello! Welcome to my portfolio. How can I help you navigate better?</p>
               <button onClick={() => handleOptionClick('about')}>Check About Section</button>
               <button onClick={() => handleOptionClick('home')}>Stay at Home Section</button>
               <button onClick={() => handleOptionClick('explore')}>Just Looking Around</button>

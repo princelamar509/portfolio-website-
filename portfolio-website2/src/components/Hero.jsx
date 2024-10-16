@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import "./Hero.css";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import profilePicture from "../assets/profile-picture.webp";
@@ -16,14 +16,14 @@ function Hero() {
             <h1 id="name">
               I'M <strong className="hero-name-highlight">Madeus Rene</strong>
             </h1>
-            <h2 className="typewriter" id="typewriter">
-              {"Front End Developer"}
-            </h2>
+           
+           <h2 className="typewriter" id="typewriter">
+      {'Front End Developer'}
+    </h2>
           </div>
         </div>
-
-        <div className="hero-image">
-          <img src={profilePicture} alt="Profile" draggable={false} />
+        <div className="hero-image" >
+          <img src={profilePicture} alt="Profile" id="profile-picture" draggable={false} />
         </div>
 
         <TextToSpeechButton />
@@ -57,7 +57,8 @@ function Hero() {
             <div className="emoji">😄</div>
             <div className="emoji">😎</div>
           </div>
-        
+    
+          
           </ScrollAnimation>
           <ScrollAnimation delay={0.4} duration={0.9} easing={[0.52, 0, 0.58, 1]}>
           <div className="social-section">
@@ -103,6 +104,7 @@ function Hero() {
           </ScrollAnimation>
         
         </div>
+
 
       </div>
 
