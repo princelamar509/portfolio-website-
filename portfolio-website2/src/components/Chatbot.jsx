@@ -1,18 +1,24 @@
 import React, { useState } from 'react';
 import ChatIcon from './ChatIcon'; 
+import CustomAlert from './CustomAlert'; // Import the CustomAlert component
 import './Chatbot.css';
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [showAlert, setShowAlert] = useState(false); // State for showing alert
 
   const toggleChat = () => setIsOpen(!isOpen);
 
   const handleOptionClick = (option) => {
     setHasInteracted(true);
     setTimeout(() => {
-      alert("Cool beans! Make sure to hover over everything and have fun.");
+      setShowAlert(true); // Show custom alert instead of native alert
     }, 500);
+  };
+
+  const handleCloseAlert = () => {
+    setShowAlert(false); // Function to close the alert
   };
 
   return (
@@ -20,7 +26,6 @@ const Chatbot = () => {
       <div className="chatbot-icon" onClick={toggleChat}>
         <ChatIcon size={43} color="goldenrod" /> 
       </div>
-
       {isOpen && (
         <div className="chatbot-window">
           {!hasInteracted ? (
@@ -34,6 +39,13 @@ const Chatbot = () => {
             <p>Thanks for interacting!</p>
           )}
         </div>
+      )}
+
+      {showAlert && (
+        <CustomAlert 
+          message="Cool beans! Make sure to hover over everything and have fun."
+          onClose={handleCloseAlert} // Pass close function to custom alert
+        />
       )}
     </div>
   );
