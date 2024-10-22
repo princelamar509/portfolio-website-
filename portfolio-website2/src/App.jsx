@@ -12,6 +12,7 @@ import ScrollTrigger from './components/ScrollTrigger';
 import Preloader from './components/Preloader'; 
 import React, { useState, useEffect } from 'react';
 import Chatbot from './components/Chatbot';
+import SvgGrid from './components/SvgGrid';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,6 +32,7 @@ function App() {
   return (
 
     <div className="App">
+      <SvgGrid />
     <Router>
       <Navbar />
       <ScrollTrigger>
