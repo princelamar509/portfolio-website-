@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: 'Dashboard',
       description: 'This is a Home automation Dashboard Project. I created using REACT(JSX) + CSS + Freeweather API .',
-      link: 'https://princelamar509.github.io/Maplocation/',
+      link: 'https://princelamar509.github.io/Dashboard1/',
       snapshot: dashboard, 
       category: 'React',
     },
