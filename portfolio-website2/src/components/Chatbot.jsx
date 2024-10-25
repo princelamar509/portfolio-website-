@@ -21,6 +21,15 @@ const Chatbot = () => {
     setShowAlert(false); // Function to close the alert
   };
 
+
+  // Add event listener to close the chatbot when clicking outside of it
+  window.addEventListener('click', (event) => {
+    if (!isOpen) return;
+    if (!event.target.closest('.chatbot-container')) {
+      setIsOpen(false);
+    }
+  })
+
   return (
     <div className="chatbot-container">
       <div className="chatbot-icon" onClick={toggleChat}>
