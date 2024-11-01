@@ -67,7 +67,7 @@ function About() {
         <li><FaAngleRight /> Front End Development Libraries</li>
         <li><FaAngleRight /> Data Visualization With D3</li>
         <br/>
-        <li className='note'> Currently learning  <span className='bold1'> Relational Database <progress id='file' value="20" min="0" max="100"></progress></span></li>
+        {/*<li className='note'> Currently learning  <span className='bold1'> JAVA <progress id='file' value="20" min="0" max="100"></progress></span></li>*/}
       </ul>
   
     </fieldset>
