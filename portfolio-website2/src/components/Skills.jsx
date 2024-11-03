@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Skills.css';
 import D3Icon from '../components/D3Icon';
 import MarqueeButton from '../components/MarqueeButton';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs,  FaSass, FaBootstrap,  FaGithub, FaApple, FaMicrosoft } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact,FaPython, FaNodeJs,  FaSass, FaBootstrap,  FaGithub, FaApple, FaMicrosoft } from 'react-icons/fa';
 import ScrollAnimation from "./ScrollAnimation";
 const Skills = () => { 
   const [showMarquee, setShowMarquee] = useState(false);
@@ -18,6 +18,7 @@ const Skills = () => {
     { name: 'CSS', color: 'bar-css', icon: <FaCss3Alt  size="1.5em"/>, percentage: '85%' },
     { name: 'JavaScript', color: 'bar-js', icon: <FaJs  size="1.5em"/>, percentage: '60%' },
     { name: 'React', color: 'bar-react', icon: <FaReact  size="1.5em"/>, percentage: '65%' },
+    { name: 'Python', color: 'bar-python', icon: <FaPython  size="1.5em"/>, percentage: '50%' },
     { name: 'SASS', color: 'bar-sass', icon: <FaSass  size="1.5em"/>, percentage: '65%' },
     { name: 'Bootstrap', color: 'bar-bootstrap', icon: <FaBootstrap  size="1.5em"/>, percentage: '60%' },
     { name: 'D3.js', color: 'bar-d3', icon: <D3Icon />, percentage: '50%' },
