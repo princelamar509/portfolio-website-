@@ -8,24 +8,23 @@ import moneyTransferImg from '../assets/money-transfer.png';
 import musicAppImg from '../assets/music-app.png';
 import shoppingCartImg from '../assets/shoppingimage.png';
 import diceGameImg from '../assets/dice-gameimage.png';
-import dashboard from '../assets/dashboard.jpeg'; 
+import securePay from '../assets/securepay.jpeg';
 import landingPageImg from '../assets/landing-pageimage.png';
 
 const Projects = () => {
   const allProjects = [
     {
       title: 'Money Transfer',
-      description:
-        "This is an International Money Transfer Project. Created using REACT(JSX) + CSS. I didn't use any API for this project, just to make it more of a DIY adventure. It’s a real testament to how amusing coding can be.",
+      description: 'This is an international money transfer project developed with React (JSX) and CSS. Built entirely without APIs, it highlights a DIY approach to coding, emphasizing both creativity and technical skill in creating a fully functional, standalone application.',
       link: 'https://princelamar509.github.io/transfer-app/',
       snapshot: moneyTransferImg, 
       category: 'React',
     },
     {
-      title: 'Dashboard',
-      description: 'This is a Home automation Dashboard Project. I created using REACT(JSX) + CSS + Freeweather API .',
-      link: 'https://princelamar509.github.io/Dashboard1/',
-      snapshot: dashboard, 
+      title: 'SecurePay',
+      description: 'This is a payment application project built with React (JSX) and CSS. The idea for this app originated from a personal experience: while attempting to purchase a car for my young cousin living in another state, we faced a significant obstacle. She needed to transfer over $5,000 for the purchase, but we found that traditional money transfer services imposed restrictive limits, capping transactions at $2,500. This project aims to address such limitations by providing a streamlined, secure, and flexible platform for managing larger financial transactions with ease.  ',
+      link: 'https://princelamar509.github.io/securepay/',
+      snapshot: securePay, 
       category: 'React',
     },
     {

@@ -4,10 +4,15 @@ import './Speech-Button.css';
 
 const SpeechButtonWithNote = () => {
   const [showNote, setShowNote] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false); // Track if speech is playing
 
   const handleSpeech = () => {
-    const speech = new SpeechSynthesisUtterance();
-    speech.text = `Dear Recruiter,
+    if (isSpeaking) {
+      window.speechSynthesis.cancel();
+      setIsSpeaking(false);
+    } else {
+      const speech = new SpeechSynthesisUtterance();
+      speech.text = `Dear Recruiter,
 
         I hope this message finds you well. I wanted to take a moment to introduce myself and share a bit about my journey into front-end development. 
         After being rejected by my dream college, Barry University in Miami, Florida, in 2014, I had to shift gears faster than a teenager sneaking home past curfew. 
@@ -26,36 +31,41 @@ const SpeechButtonWithNote = () => {
         Best regards, 
         Madeus Rene.`;
 
-        speech.lang = 'en-US'; 
-        window.speechSynthesis.speak(speech);
+      speech.lang = 'en-US';
+      speech.onend = () => {
+        setIsSpeaking(false); // Reset state when speech ends
       };
-    
-      return (
-        <div className="card-container">
-          <div
-            className="speech-button-card"
-            onMouseEnter={() => setShowNote(true)}
-            onMouseLeave={() => setShowNote(false)}
-            onClick={handleSpeech}
-          >
-            <FaVolumeUp className="icon-voice" />
-            <FaMicrophone className="icon-mic" />
-           
-            {showNote && (
-              <div className="note-card">
-               
-<ul>
-           <li><span class="icon-star">⭐</span> Male voice selected.</li>
-           <li><span class="icon-star">⭐</span> Narrator may vary by device.</li>
-           <li><span class="icon-star">⭐</span> If unsupported, notification will appear.</li>
-           <li><span class="icon-star">⭐</span> English language only.</li>
-</ul>
 
-              </div>
-            )}
+      // Start speaking and update state
+      window.speechSynthesis.speak(speech);
+      setIsSpeaking(true);
+    }
+  };
+
+  return (
+    <div className="card-container">
+      <div
+        className="speech-button-card"
+        onMouseEnter={() => setShowNote(true)}
+        onMouseLeave={() => setShowNote(false)}
+        onClick={handleSpeech}
+      >
+        <FaVolumeUp className="icon-voice" />
+        <FaMicrophone className="icon-mic" />
+
+        {showNote && (
+          <div className="note-card">
+            <ul>
+              <li><span className="icon-star">⭐</span> Male voice selected.</li>
+              <li><span className="icon-star">⭐</span> Narrator may vary by device.</li>
+              <li><span className="icon-star">⭐</span> If unsupported, notification will appear.</li>
+              <li><span className="icon-star">⭐</span> English language only.</li>
+            </ul>
           </div>
-        </div>
-      );
-    };
-    
-    export default SpeechButtonWithNote;
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default SpeechButtonWithNote;
