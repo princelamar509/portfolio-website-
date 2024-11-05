@@ -52,14 +52,12 @@ const SpeechButtonWithNote = () => {
       >
         <FaVolumeUp className="icon-voice" />
         <FaMicrophone className="icon-mic" />
-
         {showNote && (
           <div className="note-card">
             <ul>
               <li><span className="icon-star">⭐</span> Male voice selected.</li>
               <li><span className="icon-star">⭐</span> Narrator may vary by device.</li>
-              <li><span className="icon-star">⭐</span> If unsupported, notification will appear.</li>
-              <li><span className="icon-star">⭐</span> English language only.</li>
+              <li><span className="icon-star">⭐</span> If unsupported, notification will Display.</li>
             </ul>
           </div>
         )}
