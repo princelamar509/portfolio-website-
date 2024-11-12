@@ -7,7 +7,6 @@ import { FaGithub } from 'react-icons/fa';
 import moneyTransferImg from '../assets/money-transfer.png';
 import musicAppImg from '../assets/music-app.png';
 import shoppingCartImg from '../assets/shoppingimage.png';
-import diceGameImg from '../assets/dice-gameimage.png';
 import securePay from '../assets/securepay.jpeg';
 import landingPageImg from '../assets/landing-pageimage.png';
 
@@ -27,7 +26,7 @@ const Projects = () => {
       snapshot: securePay, 
       category: 'React',
     },
-    {
+   /* {
       title: 'Music App',
       description:
         "This is a Music App Project. I've always been curious about music and it's fun. My bootcamp project for a music app was one of my favorite projects; for this reason, I decided to build something more advanced and interesting. Created using REACT(JSX) + CSS/SASS.",
@@ -35,6 +34,7 @@ const Projects = () => {
       snapshot: musicAppImg, 
       category: 'React',
     },
+   },*/
     {
       title: 'E-commerce/Shopping-cart',
       description:
@@ -42,14 +42,6 @@ const Projects = () => {
       link: 'https://princelamar509.github.io/shopping1/',
       snapshot: shoppingCartImg,
       category: 'React',
-    },
-    {
-      title: 'Dice Game',
-      description:
-        'This is a Dice Game Project. I think this project is very interesting and fun to build. Created using Plain JavaScript + CSS.',
-      link: 'https://princelamar509.github.io/DiceGame1/',
-      snapshot: diceGameImg, 
-      category: 'JavaScript',
     },
   
     {

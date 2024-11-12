@@ -1,28 +1,28 @@
 import React, { useState } from 'react';
 import ChatIcon from './ChatIcon'; 
-import CustomAlert from './CustomAlert'; // Import the CustomAlert component
+import CustomAlert from './CustomAlert'; 
 import './Chatbot.css';
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
-  const [showAlert, setShowAlert] = useState(false); // State for showing alert
+  const [showAlert, setShowAlert] = useState(false); 
 
   const toggleChat = () => setIsOpen(!isOpen);
 
   const handleOptionClick = (option) => {
     setHasInteracted(true);
     setTimeout(() => {
-      setShowAlert(true); // Show custom alert instead of native alert
+      setShowAlert(true); 
     }, 500);
   };
 
   const handleCloseAlert = () => {
-    setShowAlert(false); // Function to close the alert
+    setShowAlert(false); 
   };
 
 
-  // Add event listener to close the chatbot when clicking outside of it
+
   window.addEventListener('click', (event) => {
     if (!isOpen) return;
     if (!event.target.closest('.chatbot-container')) {

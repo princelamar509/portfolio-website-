@@ -15,8 +15,6 @@ function About() {
 
       const aboutSection = document.querySelector('.about');
       const rect = aboutSection.getBoundingClientRect();
-      
-    
       const scrollPercentage = (window.innerHeight - rect.top) / rect.height * 100;
 
       if (scrollPercentage >= 10) {
@@ -32,8 +30,6 @@ function About() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-
 
 
   return (
