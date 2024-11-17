@@ -56,7 +56,7 @@ function About() {
 
       <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
       <fieldset>
-      <legend className='achievements'>Achievements</legend>
+      <legend className='achievements'>Certifications</legend>
       <ul>
         <li><FaAngleRight /> Responsive Web Design</li>
         <li><FaAngleRight /> Javascript A D S (Beta)</li>
