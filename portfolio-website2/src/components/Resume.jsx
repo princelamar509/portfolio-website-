@@ -1,6 +1,6 @@
 import React from "react";
 import {  FaFilePdf } from "react-icons/fa";  
-import pdf from "../assets/resume.pdf"; 
+import pdf from "../assets/resume1.pdf"; 
 import './Resume.css';
 import ScrollAnimation from "./ScrollAnimation";
 const CV = () => {
