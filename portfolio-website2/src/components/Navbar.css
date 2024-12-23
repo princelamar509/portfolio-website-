@@ -64,7 +64,9 @@ box-shadow: 0px 8px 20px rgba(167, 159, 136, 0.109);
   transition: transform 0.4s ease;
 overflow: hidden;
   border: 2px solid #DAA520;
+
 }
+
 
 .avatar img {
   width: 100%;
@@ -202,7 +204,7 @@ gap: 10px;
   background: transparent;
   width: 100%;
   margin-top: 20px;
-  box-shadow: 0px -4px 20px rgba(132, 125, 89, 0.255);
+  box-shadow: 0px -4px 20px rgba(70, 69, 63, 0.255);
   margin-bottom: 14px;
 }
 
