@@ -4,7 +4,7 @@ import CustomAlert from './CustomAlert';
 import './Chatbot.css';
 
 const Chatbot = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [showAlert, setShowAlert] = useState(false); 
 
@@ -33,7 +33,7 @@ const Chatbot = () => {
   return (
     <div className="chatbot-container">
       <div className="chatbot-icon" onClick={toggleChat}>
-        <ChatIcon size={43} color="goldenrod" /> 
+        <ChatIcon size={40} color="goldenrod" /> 
       </div>
       {isOpen && (
         <div className="chatbot-window">
