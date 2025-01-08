@@ -20,8 +20,8 @@ const Navbar = () => {
         </div>
         <div className="avatar-info">
           <h2>Madeus Rene</h2>
-          <p> < FaCode className='info-icon1'/> Front-End Developer</p>
-          <p><FaMapMarkerAlt  className='info-icon2'/>  Indianapolis, IN</p>
+          <p> < FaCode className='info-icon1'/> <em>Front-End Developer</em></p>
+          <p><FaMapMarkerAlt  className='info-icon2'/> <em> Indianapolis, IN</em></p>
         </div>
       </div>
       <div className="menu-icon" onClick={toggleMenu}>

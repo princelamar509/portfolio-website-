@@ -63,7 +63,7 @@ function About() {
         <li><FaAngleRight /> Front End Development Libraries</li>
         <li><FaAngleRight /> Data Visualization With D3</li>
         <br/>
-        {<li className='note'> Currently learning  <span className='bold1'> Python & JAVA <progress id='file' value="45" min="0" max="100"></progress></span></li>}
+        {<li className='note'> Currently learning  <span className='bold1'> <em>Python & SQL Databases</em> <progress id='file' value="45" min="0" max="100"></progress></span></li>}
       </ul>
   
     </fieldset>
