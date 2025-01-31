@@ -5,7 +5,6 @@ import { FaGithub } from 'react-icons/fa';
 
 
 import moneyTransferImg from '../assets/money-transfer.png';
-import musicAppImg from '../assets/music-app.png';
 import shoppingCartImg from '../assets/shoppingimage.png';
 import securePay from '../assets/securepay.jpeg';
 import landingPageImg from '../assets/landing-pageimage.png';
@@ -26,15 +25,15 @@ const Projects = () => {
       snapshot: securePay, 
       category: 'React',
     },
-   /* {
-      title: 'Music App',
+   {
+      title: 'Tax Website',
       description:
         "This is a Music App Project. I've always been curious about music and it's fun. My bootcamp project for a music app was one of my favorite projects; for this reason, I decided to build something more advanced and interesting. Created using REACT(JSX) + CSS/SASS.",
-      link: 'https://princelamar509.github.io/music-app/',
-      snapshot: musicAppImg, 
-      category: 'React',
+      link: 'https://princelamar509.github.io/taxwebsite/',
+      snapshot: "", 
+      category: 'HTML/CSS/Js',
     },
-   },*/
+   
     {
       title: 'E-commerce/Shopping-cart',
       description:
@@ -49,7 +48,7 @@ const Projects = () => {
       description: 'This is a Landing Page Project. Created using HTML/CSS.',
       link: 'https://princelamar509.github.io/Start-up1/',
       snapshot: landingPageImg, 
-      category: 'HTML/CSS',
+      category: 'HTML/CSS/Js',
     },
   ];
 
@@ -60,7 +59,7 @@ const Projects = () => {
       ? allProjects
       : allProjects.filter((project) => project.category === selectedCategory);
 
-  const categories = ['All', 'React', 'JavaScript', 'HTML/CSS'];
+  const categories = ['All', 'React', 'HTML/CSS/Js'];
 
   return (
 
