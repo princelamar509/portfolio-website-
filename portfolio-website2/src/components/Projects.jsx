@@ -8,6 +8,7 @@ import moneyTransferImg from '../assets/money-transfer.png';
 import shoppingCartImg from '../assets/shoppingimage.png';
 import securePay from '../assets/securepay.jpeg';
 import landingPageImg from '../assets/landing-pageimage.png';
+import taxWebsite from '../assets/taxwebsite.jpeg';
 
 const Projects = () => {
   const allProjects = [
@@ -30,7 +31,7 @@ const Projects = () => {
       description:
         "This is a Music App Project. I've always been curious about music and it's fun. My bootcamp project for a music app was one of my favorite projects; for this reason, I decided to build something more advanced and interesting. Created using REACT(JSX) + CSS/SASS.",
       link: 'https://princelamar509.github.io/taxwebsite/',
-      snapshot: "", 
+      snapshot: taxWebsite , 
       category: 'HTML/CSS/Js',
     },
    
