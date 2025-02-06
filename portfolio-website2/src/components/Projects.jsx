@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 
 
 
-import moneyTransferImg from '../assets/money-transfer.png';
+import cashmeee from '../assets/cashmeee.jpeg';
 import shoppingCartImg from '../assets/shoppingimage.png';
 import securePay from '../assets/securepay.jpeg';
 import landingPageImg from '../assets/landing-pageimage.png';
@@ -16,7 +16,7 @@ const Projects = () => {
       title: 'Money Transfer',
       description: 'This is an international money transfer project developed with React (JSX) and CSS. Built entirely without APIs, it highlights a DIY approach to coding, emphasizing both creativity and technical skill in creating a fully functional, standalone application.',
       link: 'https://princelamar509.github.io/transfer-app/',
-      snapshot: moneyTransferImg, 
+      snapshot: cashmeee, 
       category: 'React',
     },
     {
