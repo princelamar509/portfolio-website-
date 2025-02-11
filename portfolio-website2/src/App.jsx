@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes,Navigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -13,6 +13,7 @@ import Preloader from './components/Preloader';
 import React, { useState, useEffect } from 'react';
 import Chatbot from './components/Chatbot';
 import SvgGrid from './components/SvgGrid';
+import NotFound from "./pages/NotFound";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -42,7 +43,8 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="*" element={<Navigate to="/" />} />
+      {/* <Route path="*" element={<Navigate to="/" />} /> */}
+        <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
       <Chatbot />
       <Footer />
