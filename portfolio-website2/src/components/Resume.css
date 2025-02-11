@@ -124,6 +124,7 @@ footer {
     text-decoration: none;
     transition: background-color 0.3s ease;
     cursor: pointer;
+   
   }
   
   .button-container {
@@ -137,6 +138,8 @@ footer {
     background-color: #f3c808;
     color: #0d0d0d;
   text-decoration: none;
+  border-left: 3px solid black;
+
   }
   
   .download-icon {
@@ -159,6 +162,7 @@ footer {
     visibility: visible;
     margin-left: 8px;
     animation: leftToRight 0.3s ease-in-out, slideIn 0.3s ;
+    
   }
   
   @keyframes leftToRight {
