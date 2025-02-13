@@ -127,9 +127,28 @@
 
 .project-link:hover {
   background: #1f1d0f;
-  box-shadow: 0 4px 15px rgba(43, 75, 111, 0.3);
-  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(9, 13, 17, 0.815);
+  transform: translateY(6px);
+  font-style: italic; 
 }
+
+.read-more-btn {
+  background: linear-gradient(to left, goldenrod, #1f1d0f,#29210b,#1f1d0f);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.read-more-btn:hover {
+  background: goldenrod;
+ font-weight: bold;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -191,3 +210,8 @@
     }
 
   }
+
+
+  
+
+

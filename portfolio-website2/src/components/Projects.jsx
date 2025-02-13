@@ -54,6 +54,14 @@ const Projects = () => {
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
+ const [expanded, setExpanded] = useState({});
+
+ const toggleExpand = (index) => {
+   setExpanded((prevState) => ({
+    ...prevState,
+    [index]: !prevState[index],
+   }));
+ };
 
   const filteredProjects =
     selectedCategory === 'All'
@@ -87,8 +95,14 @@ const Projects = () => {
                 className="project-snapshot" draggable={false}
               />
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
 
+             {/* <p>{project.description}</p> */}
+             <p>
+                {expanded[index] ? project.description : `${project.description.substring(0, 100)}...`}
+              </p>
+              <button className="read-more-btn" onClick={() => toggleExpand(index)}>
+                {expanded[index] ? 'Read Less' : 'Read More'}
+              </button>
               <a
                 href={project.link}
                 target="_blank"
@@ -108,4 +122,7 @@ const Projects = () => {
 };
 
 export default Projects;
+
+
                                         
+
