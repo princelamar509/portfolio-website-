@@ -149,7 +149,9 @@ const EnhancedGrid = () => {
               repeatCount="indefinite"
             />
           </rect>
+
         </svg>
+        
       )}
     </>
   );

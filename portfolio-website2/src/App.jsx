@@ -14,6 +14,7 @@ import React, { useState, useEffect } from 'react';
 import Chatbot from './components/Chatbot';
 import SvgGrid from './components/SvgGrid';
 import NotFound from "./pages/NotFound";
+import DayNightToggle from "./components/DayNightToggle";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,6 +34,7 @@ function App() {
   return (
 
     <div className="App">
+     
       <SvgGrid />
     <Router>
       <Navbar />
@@ -50,7 +52,7 @@ function App() {
       <Footer />
       </ScrollTrigger>
     </Router>
-
+    <DayNightToggle />
     </div>
 
 

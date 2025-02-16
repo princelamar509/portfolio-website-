@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 50px 20px;
-  color: #020202;
+  color: #000000;
   margin-top: 80px;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -38,7 +38,7 @@ align-items: center;
 .about-text p {
   font-size: 1.8rem;
   line-height: 1.5;
-  color: #333;
+  color: #000000;
   margin-bottom: 20px;
   opacity: 1;
   transform: translateY(50px);

@@ -39,4 +39,75 @@
   
   
   
+  /* daynight.css */
+
+.toggle-btn {
+  position: fixed;
+  top: -60px;
+  right: 20px;
+  background: goldenrod;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  border: solid 3px black;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.1);
+ .icon-sun{
+  animation: spin 1s ease-in-out ;
+
+ }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dark {
+  background-color: rgb(106, 104, 77);
+  color: #000;
   
+}
+
+.light {
+  background-color: rgb(246, 241, 241);
+  color: rgb(9, 8, 8);
+
+}
+
+
+
+
+
+
+.icon.moon path {
+  stroke-dasharray: 1860;
+  stroke-dashoffset: 0;
+}
+.icon.moon:hover path {
+  animation: animate-moon-star 2s forwards;
+}
+@keyframes animate-moon-star  {
+  0% {
+      stroke-dashoffset: 0;
+  }
+  40% {
+      stroke-dashoffset: 1850;
+  }
+  80% {
+      stroke-dashoffset: 2720;
+      fill: rgb(124, 129, 113)
+
+  }
+  100% {
+      stroke-dashoffset: 3720;
+      fill: rgb(255, 255, 255)
+
+  }
+}

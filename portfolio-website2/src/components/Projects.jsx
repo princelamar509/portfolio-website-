@@ -29,7 +29,7 @@ const Projects = () => {
    {
       title: 'Tax Website',
       description:
-        "This is a Music App Project. I've always been curious about music and it's fun. My bootcamp project for a music app was one of my favorite projects; for this reason, I decided to build something more advanced and interesting. Created using REACT(JSX) + CSS/SASS.",
+        "This is a professional tax website built with HTML, CSS, and JSX, designed for seamless user experience, efficiency, and modern aesthetics.",
       link: 'https://princelamar509.github.io/taxwebsite/',
       snapshot: taxWebsite , 
       category: 'HTML/CSS/Js',

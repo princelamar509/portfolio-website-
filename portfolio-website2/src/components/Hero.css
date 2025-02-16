@@ -301,7 +301,7 @@ color: #000000;
   display: inline-flex;
   width: 40px;
   height: 40px;
-  color: #fcfcfc;
+  color: #000000;
   justify-content: center;
   align-items:  center;
   position: relative;
@@ -324,11 +324,11 @@ bottom: 20px;
   transform: translate(-50%, -50%); 
   z-index: -1;
   transition: 0.3s ease-in;
- 
+
 }
 
 .intro-social-icons a:hover {
-  color: #010101;
+  color: #ebe1e6;
   background: #f4c003;
   animation: wiggle 0.3s ease-in infinite;
 

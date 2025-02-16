@@ -4,7 +4,7 @@ import CustomAlert from './CustomAlert';
 import './Chatbot.css';
 
 const Chatbot = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [showAlert, setShowAlert] = useState(false); 
 

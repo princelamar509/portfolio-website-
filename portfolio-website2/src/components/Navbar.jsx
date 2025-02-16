@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Clock from './Clock';
+
 import { FaHome, FaUser, FaCode, FaFileAlt, FaBars, FaTimes,FaMapMarkerAlt } from 'react-icons/fa';
 import './Navbar.css';
 
@@ -18,7 +19,9 @@ const Navbar = () => {
         <div className="avatar">
         <img src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg" alt="Profile" draggable={false} />
         </div>
+
         <div className="avatar-info">
+      
           <h2>Madeus Rene</h2>
           <p> < FaCode className='info-icon1'/> <em>Front-End Developer</em></p>
           <p><FaMapMarkerAlt  className='info-icon2'/> <em> Indianapolis, IN</em></p>

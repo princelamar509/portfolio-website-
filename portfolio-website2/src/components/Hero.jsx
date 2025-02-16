@@ -36,7 +36,7 @@ function Hero() {
           <p className="intro-text">
             I’m <strong className="connect-text">Madeus Rene</strong>, a
             self-taught Front-end developer with a passion for creating
-            intuitive and dynamic user experiences. Armed with curiosity and
+            intuitive and <strong className="connect-text">dynamic user experiences</strong>. Armed with curiosity and
             coffee, I turn pixels into seamless interactions that{" "}
             <strong className="connect-text">(hopefully)</strong> don't break the internet !
           </p>
