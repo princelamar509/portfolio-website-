@@ -46,7 +46,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />
       {/* <Route path="*" element={<Navigate to="/" />} /> */}
-        <Route path="*" element={<NotFound />} /> {/* 404 Page */}
+       {/* <Route path="*" element={<NotFound />} /> {/* 404 Page */}
       </Routes>
       <Chatbot />
       <Footer />
