@@ -6,6 +6,7 @@ import ScrollAnimation from "./ScrollAnimation";
 function About() {
   const [animate, setAnimate] = useState(false);
 
+const animateClass = animate ? 'animate' : '';
 
 
 
@@ -55,7 +56,7 @@ function About() {
       <Skills />
 
       <ScrollAnimation delay={0.3} duration={0.8} easing={[0.42, 0, 0.58, 1]}>
-      <fieldset>
+      <fieldset className='certifications-wrapper'>
       <legend className='achievements'>Certifications</legend>
       <ul>
         <li><FaAngleRight /> Responsive Web Design</li>

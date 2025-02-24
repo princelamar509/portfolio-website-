@@ -121,29 +121,59 @@ opacity: 1;
 
 
 
+
 .achievements{
   font-size: 1.5rem;
   font-weight: 600;
 color: goldenrod;
 text-align: left;
+
+font: 700 3em/1 "Oswald", sans-serif;
+letter-spacing: 0;
+padding: .25em 0 .325em;
+display: block;
+margin: 0 auto;
+text-shadow: 0 0 80px rgba(22, 1, 1, 0.5);
+
+/* Clip Background Image */
+
+background: url(https://americancivic.com/wp-content/uploads/Haiti-and-the-Haitian-Refugee-Crisis-.jpg) repeat-y;
+-webkit-background-clip: text;
+background-clip: text; 
+
+/* Animate Background Image */
+
+-webkit-text-fill-color: transparent;
+-webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+-webkit-transform: translate3d(0,0,0);
+-webkit-backface-visibility: hidden;
+
 }
 
 
-fieldset {
-max-width: 480px;
-  height: auto;
-  margin: 0 auto;
-    border: 4px solid goldenrod;
-    padding: 10px;
-    margin-top: 40px;
-    border-radius: 8px;
-  margin-bottom: 40px;
-  overflow: hidden;
-align-items: center;
-justify-content: center;
-text-align: center;
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
 
-  }
+fieldset {
+  max-width: 480px;
+    height: auto;
+    margin: 0 auto;
+      border: 4px solid goldenrod;
+      padding: 10px;
+      margin-top: 40px;
+      border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+    }
 
 
 .note{
@@ -179,9 +209,20 @@ li {
   display: flex;
   align-items: center;
  white-space: nowrap;
-
-
+animation: typing 5s steps(822, end) ;
+animation-delay: 3s;
+animation-iteration-count: 6;
 }
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
 
 li svg {
   margin-right: 10px;
