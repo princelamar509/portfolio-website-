@@ -45,12 +45,12 @@
   position: fixed;
   top: -60px;
   right: 20px;
-  background: goldenrod;
+  background:  goldenrod; 
   border: none;
   cursor: pointer;
   border-radius: 20px;
   transition: transform 0.3s ease-in-out;
-  border: solid 3px black;
+  border: 4px double rgba(4, 3, 3, 0.258);;
 }
 
 .toggle-btn:hover {

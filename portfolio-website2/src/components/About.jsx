@@ -59,10 +59,10 @@ const animateClass = animate ? 'animate' : '';
       <fieldset className='certifications-wrapper'>
       <legend className='achievements'>Certifications</legend>
       <ul>
-        <li><FaAngleRight /> Responsive Web Design</li>
-        <li><FaAngleRight /> Javascript A D S (Beta)</li>
-        <li><FaAngleRight /> Front End Development Libraries</li>
-        <li><FaAngleRight /> Data Visualization With D3</li>
+        <li className='list'><FaAngleRight /> Responsive Web Design</li>
+        <li className='list'><FaAngleRight /> Javascript A D S (Beta)</li>
+        <li className='list'><FaAngleRight /> Front End Development Libraries</li>
+        <li className='list'><FaAngleRight /> Data Visualization With D3</li>
         <br/>
         {<li className='note'> Currently learning  <span className='bold1'> <em>Python & SQL Databases</em> <progress id='file' value="45" min="0" max="100"></progress></span></li>}
       </ul>
