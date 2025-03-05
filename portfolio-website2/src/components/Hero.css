@@ -324,13 +324,18 @@ bottom: 20px;
   transform: translate(-50%, -50%); 
   z-index: -1;
   transition: 0.3s ease-in;
-
+  transition: 500ms;
 }
 
 .intro-social-icons a:hover {
   color: #ebe1e6;
   background: #f4c003;
-  animation: wiggle 0.3s ease-in infinite;
+  animation: wiggle 0.3s ease infinite;
+animation-delay: 450ms;
+  outline: 2px solid goldenrod;
+  outline-offset: 3px;
+cursor: pointer;
+padding: .2em .5em;
 
 }
 
@@ -342,7 +347,7 @@ bottom: 20px;
     transform: rotateZ(-10deg);
   }
   50% {
-    transform: rotateZ(10deg);
+    transform: rotateZ(20deg);
   }
   75% {
     transform: rotateZ(-10deg);

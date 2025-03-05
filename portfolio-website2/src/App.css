@@ -82,17 +82,28 @@
 .custom-alert-close {
   background: black; 
   color: white;
-  border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out; 
+  border: 0;
+  outline: 2px solid #f0f1f1;
+  outline-offset: 3px;
+cursor: pointer;
+padding: .5em 1em;
+transition: 500ms;
+box-shadow: 0 0  0 1px gold,
+0 0 0 2px,
+0 0 0 2px;
 }
 
 .custom-alert-close:hover {
   background-color: goldenrod;
   transition: transform 0.3s ease-in-out;
   transform: rotate(360deg);
+ outline-offset: -5px;
+ outline-color: #0e404b;
+
 }
 
 
