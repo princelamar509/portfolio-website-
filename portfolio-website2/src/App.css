@@ -81,7 +81,7 @@
 
 .custom-alert-close {
   background: black; 
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
